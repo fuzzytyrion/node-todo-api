@@ -29,5 +29,5 @@ var newTodo = new Todo({
 newTodo.save().then((doc) => {
     console.log('Saved todo ', doc);
 }, (e) => {
-    console.log('Unable to save todo');
+    console.log('Unable to save todo', e);
 });
